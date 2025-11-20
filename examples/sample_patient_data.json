@@ -1,0 +1,10 @@
+{
+  "patient_id": "PT1001",
+  "age": 57,
+  "sex": "Male",
+  "vital_signs": {"BP": "150/95", "HR": 88, "Temp": 99.1},
+  "medications": ["Lisinopril 10mg"],
+  "allergies": ["Penicillin"],
+  "medical_history": ["Hypertension", "Type 2 Diabetes"],
+  "chief_complaint": "Increased thirst, urination, fatigue (3 weeks)"
+}
