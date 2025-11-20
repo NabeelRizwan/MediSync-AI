@@ -79,7 +79,7 @@ MediSync AI is a cutting-edge **multi-agent medical diagnostic system** that orc
 
 ## 📞 Contact
 
-GitHub: [@YOUR-USERNAME](https://github.com/YOUR-USERNAME)
+GitHub: [Nabeel](https://github.com/NabeelRizwan)
 
 ---
 
