@@ -1,5 +1,4 @@
 
-```markdown
 # 🏥 MediSync AI
 ### Intelligent Multi-Agent Medical Diagnostic & Treatment Planning System
 
@@ -323,6 +322,6 @@ If you find this project useful, please consider giving it a star! ⭐
 [Report Bug](https://github.com/YOUR-USERNAME/MediSync-AI/issues) • [Request Feature](https://github.com/YOUR-USERNAME/MediSync-AI/issues)
 
 </div>
-```
+
 
 ---
