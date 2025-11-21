@@ -2,3 +2,5 @@ google-genai>=0.1.0
 pandas>=2.0.0
 jupyter>=1.0.0
 ipywidgets>=8.0.0
+google-generativeai
+python-dotenv
