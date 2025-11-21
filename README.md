@@ -65,7 +65,7 @@ Each consultation provides:
 ## 🖼️ Demo
 
 ### System Architecture
-![Architecture](assets/architecture_diagram.png)
+![Architecture](architecture_diagram_MediSync-AI.png)
 
 ### Sample Output
 ![Treatment Plan](assets/treatment_output.png)
