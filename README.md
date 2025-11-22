@@ -1,6 +1,12 @@
-
-# 🏥 MediSync AI
-### Intelligent Multi-Agent Medical Diagnostic & Treatment Planning System
+<table  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><img src="Logo.png" alt="MediSync AI Logo" width="280" height="140"></td>
+    <td>
+      <h1> MediSync AI</h1>
+      <h3>Intelligent Multi-Agent Medical Diagnostic & Treatment Planning System</h3>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
 
