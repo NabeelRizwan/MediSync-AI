@@ -11,7 +11,7 @@
 
 **Where AI meets Clinical Expertise: Real-time diagnosis, precise medications, and evidence-based treatment plans in seconds.**
 
-[Features](#-features) • [Demo](#%EF%B8%8F-demo) • [Installation](#-installation) • [Usage](#-usage) • [Architecture](#%EF%B8%8F-architecture) • [Results](#-results)
+[Features](#-features) • [Demo](#%EF%B8%8F-demo) • [Installation](#%EF%B8%8F-installation) • [Usage](#-usage) • [Architecture](#%EF%B8%8F-architecture) • [Results](#-results)
 
 </div>
 
