@@ -17,9 +17,26 @@
 
 **Where AI meets Clinical Expertise: Real-time diagnosis, precise medications, and evidence-based treatment plans in seconds.**
 
-[Features](#-features) • [Demo](#%EF%B8%8F-demo) • [Installation](#%EF%B8%8F-installation) • [Usage](#-usage) • [Architecture](#%EF%B8%8F-architecture) • [Results](#-results)
+[Features](#-features) • [Demo](#%EF%B8%8F-demo) • [(Setup)Installation](#%EF%B8%8F-installation) • [Usage](#-usage) • [Architecture](#%EF%B8%8F-architecture) • [Results](#-results) • [Performance Metrics](#-performance-metrics)
 
 </div>
+
+---
+
+## 🔍 Problem & Solution
+
+### The Problem
+Medical diagnosis and treatment planning requires physicians to synthesize vast amounts of clinical information—patient histories, lab results, medical literature, drug interactions, and evidence-based guidelines—under severe time pressure. Current clinical decision support systems are fragmented, forcing manual integration across multiple platforms, leading to diagnostic delays and potential treatment errors.
+
+### Our Solution
+**MediSync AI** is a multi-agent orchestration system that automates the entire diagnostic workflow. Four specialized AI agents work in sequence to deliver comprehensive clinical analysis in 60-90 seconds:
+
+-  **Research Agent**: Evidence-based medical literature search
+-  **Diagnostic Agent**: Differential diagnosis with probability scoring
+-  **Treatment Agent**: Complete medication plans with exact dosages
+-  **Visual Agent**: Medical image analysis (X-ray, CT, MRI)
+
+**Result**: 91/100 quality score • 95%+ error recovery • Production-ready clinical decision support
 
 ---
 
@@ -81,7 +98,7 @@ Each consultation provides:
 
 ---
 
-## 🛠️ Installation
+## 🛠️ (Setup)Installation
 
 ### Prerequisites
 - Python 3.11 or higher
