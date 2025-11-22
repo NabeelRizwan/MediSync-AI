@@ -68,7 +68,7 @@ Each consultation provides:
 ![Architecture](architecture_diagram_MediSync-AI.png)
 
 ### Sample Output - Complete Treatment Plan
-![Treatment Plan](treatment_output.png)
+![Treatment Plan](Demo_TreatmentPlan_Output.PNG)
 
 ### Interactive Mode
 ![Interactive Mode](assets/interactive_mode.png)
