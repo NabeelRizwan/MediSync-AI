@@ -70,8 +70,8 @@ Each consultation provides:
 ### Sample Output - Complete Treatment Plan
 ![Treatment Plan](Demo_TreatmentPlan_Output.PNG)
 
-### Interactive Mode
-![Interactive Mode](assets/interactive_mode.png)
+### Image Analysis
+![Image Analysis](Image_Analysis_Output.PNG)
 
 ---
 
