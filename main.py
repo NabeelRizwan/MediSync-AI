@@ -1,25 +1,34 @@
-from src.preprocessing import preprocess_input
-from src.diagnosis import predict_disease
-from src.ocr import extract_text_from_image
+from src.memory import MemoryBank
+from src.context import ContextCompactor
+from src.agents.research_agent import ResearchAgent
+from src.agents.diagnostic_agent import DiagnosticAgent
+from src.agents.treatment_agent import TreatmentAgent
+from src.agents.visual_agent import VisualDiagnosticAgent
+from src.orchestrator import MediSyncOrchestrator
+from src.evaluator import AgentEvaluator
+from src.interface import interactive_patient_consultation
 
 def main():
-    print("=== MediSync AI ===")
+    print("🚀 MediSync AI Starting...")
 
-    choice = input("1. Symptom Diagnosis\n2. Prescription OCR\nChoose option: ")
+    memory_bank = MemoryBank()
+    context_compactor = ContextCompactor()
+    research_agent = ResearchAgent()
+    diagnostic_agent = DiagnosticAgent()
+    treatment_agent = TreatmentAgent()
+    visual_agent = VisualDiagnosticAgent()
+    evaluator = AgentEvaluator()
 
-    if choice == "1":
-        symptoms = input("Enter symptoms: ")
-        processed = preprocess_input(symptoms)
-        result = predict_disease(processed)
-        print(f"Diagnosis: {result}")
+    orchestrator = MediSyncOrchestrator(
+        research_agent,
+        diagnostic_agent,
+        treatment_agent,
+        visual_agent,
+        memory_bank,
+        context_compactor
+    )
 
-    elif choice == "2":
-        path = input("Enter image path: ")
-        text = extract_text_from_image(path)
-        print("Extracted Text:", text)
-
-    else:
-        print("Invalid choice")
+    interactive_patient_consultation()
 
 if __name__ == "__main__":
     main()
