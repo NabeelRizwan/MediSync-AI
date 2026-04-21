@@ -1,17 +1,26 @@
 def interactive_patient_consultation(orchestrator):
-    print("MediSync AI")
+    print("=== MediSync AI ===")
 
     pid = input("Patient ID: ")
+    age = input("Age: ")
+    sex = input("Sex: ")
     complaint = input("Symptoms: ")
 
     data = {
         "patient_id": pid,
-        "age": input("Age: "),
-        "sex": input("Sex: "),
-        "chief_complaint": complaint
+        "age": age,
+        "sex": sex,
+        "chief_complaint": complaint,
+        "vital_signs": {},
+        "medications": []
     }
 
-    result = orchestrator.process_patient_case(pid, data, complaint)
+    image = input("Image path (optional): ") or None
 
-    print("\nDiagnosis:\n", result["diagnosis"]["differential_diagnosis"])
+    result = orchestrator.process_patient_case(
+        pid, data, complaint, image
+    )
+
+    print("\n--- RESULTS ---")
+    print(result["diagnosis"]["differential_diagnosis"])
     print("\nTreatment:\n", result["treatment"]["treatment_plan"])
