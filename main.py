@@ -7,28 +7,26 @@ from src.agents.visual_agent import VisualDiagnosticAgent
 from src.orchestrator import MediSyncOrchestrator
 from src.evaluator import AgentEvaluator
 from src.interface import interactive_patient_consultation
+from src.dashboard import generate_dashboard
 
 def main():
-    print("🚀 MediSync AI Starting...")
+    memory = MemoryBank()
+    context = ContextCompactor()
 
-    memory_bank = MemoryBank()
-    context_compactor = ContextCompactor()
-    research_agent = ResearchAgent()
-    diagnostic_agent = DiagnosticAgent()
-    treatment_agent = TreatmentAgent()
-    visual_agent = VisualDiagnosticAgent()
+    research = ResearchAgent()
+    diagnostic = DiagnosticAgent()
+    treatment = TreatmentAgent()
+    visual = VisualDiagnosticAgent()
+
     evaluator = AgentEvaluator()
 
     orchestrator = MediSyncOrchestrator(
-        research_agent,
-        diagnostic_agent,
-        treatment_agent,
-        visual_agent,
-        memory_bank,
-        context_compactor
+        research, diagnostic, treatment, visual, memory, context
     )
 
-    interactive_patient_consultation()
+    interactive_patient_consultation(orchestrator)
+
+    generate_dashboard(memory, orchestrator, evaluator)
 
 if __name__ == "__main__":
     main()
